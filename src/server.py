@@ -1507,8 +1507,8 @@ async def breath_hook(request):
         try:
             self_buckets = [
                 b for b in all_buckets
-                if b["metadata"].get("type") == "self"
-                or "__self__" in (b["metadata"].get("tags") or [])
+                if b["metadata"].get("type") == "i"
+                or "__i__" in (b["metadata"].get("tags") or [])
             ]
             if self_buckets:
                 self_buckets.sort(
